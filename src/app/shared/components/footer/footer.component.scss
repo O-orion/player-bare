@@ -1,0 +1,35 @@
+.container {
+  position: static;
+  bottom: 0;
+
+  margin-top: 2rem;
+  padding: 1rem;
+
+  color: #fff;
+  background-color: #010915;
+
+  .titulo-redes {
+    text-align: center;
+    font-weight: 500;
+  }
+  .redes {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+
+  .direitos-reservados {
+    margin-top: 0.5rem;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+  }
+
+}

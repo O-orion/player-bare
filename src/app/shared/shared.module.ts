@@ -6,6 +6,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FilmesAssistidosComponent } from './components/filmes-assistidos/filmes-assistidos.component';
 import { ContinueAssistindoComponent } from './components/continue-assistindo/continue-assistindo.component';
 import { DestaquesComponent } from './components/destaques/destaques.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DestaquesComponent } from './components/destaques/destaques.component';
     CarrouselComponent,
     FilmesAssistidosComponent,
     ContinueAssistindoComponent,
-    DestaquesComponent
+    DestaquesComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { DestaquesComponent } from './components/destaques/destaques.component';
     MenuComponent,
     CarrouselComponent,
     FilmesAssistidosComponent,
-    DestaquesComponent
+    DestaquesComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
