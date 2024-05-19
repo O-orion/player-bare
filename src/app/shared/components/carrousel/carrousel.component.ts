@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carrousel',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./carrousel.component.scss']
 })
 export class CarrouselComponent {
+
+  @Input() titulo: string = ''
+  @Input() assistido: boolean = false;
+  @Input() destaque: boolean = false;
+
   slides = [
     {img: "https://image.tmdb.org/t/p/original/xncPDbNFr9YnZqaB6Ht9uItaoZO.jpg"},
     {img: "https://image.tmdb.org/t/p/original/jaluQ5yKM2Z9L1ABIXKBTr4MXo8.jpg"},

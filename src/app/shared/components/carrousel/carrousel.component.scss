@@ -35,7 +35,49 @@
                       0 30px 60px rgba(0, 0, 0, 0.03);
         }
       }
+
+      .card-filme-assistido {
+        cursor: pointer;
+        width: 100%;
+        position: relative;
+
+        .texto-aviso {
+          color: #00b11d;
+          font-weight: 500;
+          position: absolute;
+          top: 40%;
+          right: -70%;
+          opacity: 1;
+          z-index: 10000;
+        }
+
+        img {
+          border-radius: 5%;
+          width: 100%;
+          height: 100px;
+
+          image-rendering: optimizeSpeed;
+          opacity: 0.2;
+          box-shadow:  0 10px 15px rgba(0, 0, 0, 0.1), /* Sombra principal suave */
+                       0 20px 40px rgba(0, 0, 0, 0.05), /* Sombra mais difusa */
+                      0 30px 60px rgba(0, 0, 0, 0.03);
+        }
+
+      }
     }
   }
+
+  .carousel-destaque {
+    height: 300px;
+
+    .card-filme {
+      img {
+        border-color: #00b11d 1px solid !important;
+        height: 300px !important;
+      }
+
+    }
+  }
+
 }
 

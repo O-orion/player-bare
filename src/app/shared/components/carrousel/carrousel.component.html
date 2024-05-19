@@ -1,10 +1,11 @@
 <section class="container">
-  <h2 class="titulo">Populares</h2>
-  <ngx-slick-carousel class="carousel"
+  <h2 class="titulo"> {{titulo  }} </h2>
+  <ngx-slick-carousel [ngClass]="{'carousel-destaque': destaque, 'carousel': true}"
       #slickModal="slick-carousel"
       [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <div class="card-filme">
+          <div [ngClass]="assistido ? 'card-filme-assistido' : 'card-filme'">
+            <p *ngIf="assistido" class="texto-aviso" >Assistido</p>
             <img src="{{slide.img}}" alt="" class="img-style">
           </div>
         </div>
