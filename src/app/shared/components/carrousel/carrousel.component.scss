@@ -1,0 +1,41 @@
+
+.container {
+  margin-top: 20px;
+
+  .titulo {
+    margin: 0 0 5px 30px;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .carousel {
+    margin: 0 30px 0 30px;
+    /*  Garante que o carrossel ocupe toda a largura do contêiner pai */
+    display: flex;
+    gap: 5rem;
+    height: 100px;
+
+    .slide {
+      height: 100%;
+      width: 190px !important ;
+      margin-left: 4px;
+
+      .card-filme {
+        cursor: pointer;
+        width: 100%;
+
+        img {
+          border-radius: 5%;
+          width: 100%;
+          height: 100px;
+
+          image-rendering: optimizeSpeed;
+          box-shadow:  0 10px 15px rgba(0, 0, 0, 0.1), /* Sombra principal suave */
+                       0 20px 40px rgba(0, 0, 0, 0.05), /* Sombra mais difusa */
+                      0 30px 60px rgba(0, 0, 0, 0.03);
+        }
+      }
+    }
+  }
+}
+

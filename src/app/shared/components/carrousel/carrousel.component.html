@@ -1,0 +1,12 @@
+<section class="container">
+  <h2 class="titulo">Populares</h2>
+  <ngx-slick-carousel class="carousel"
+      #slickModal="slick-carousel"
+      [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <div class="card-filme">
+            <img src="{{slide.img}}" alt="" class="img-style">
+          </div>
+        </div>
+  </ngx-slick-carousel>
+</section>
